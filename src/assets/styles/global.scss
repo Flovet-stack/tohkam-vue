@@ -1,0 +1,155 @@
+@import './_variables';
+@import './_utils';
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition-duration: .3s;
+    list-style-type: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Asap', sans-serif !important;
+    color: $text !important;
+}
+
+.con {
+    margin: 0 auto;
+}
+
+@include for-mobile {
+    .con {
+        width: 90%;
+    }
+}
+
+@include for-tablet {
+    .con {
+        width: 90%;
+    }
+}
+
+@include for-large {
+    .con {
+        width: 1000px;
+    }
+}
+
+@include for-extra-large {
+    .con {
+        width: 1200px;
+    }
+}
+
+
+/* general styles  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+h6 {
+    font-family: 'Asap', sans-serif !important;
+}
+
+section {
+    padding: 3em 0;
+}
+
+.con {
+    margin: 0 auto;
+}
+
+@include for-mobile {
+    .con {
+        width: 90%;
+    }
+}
+
+@include for-tablet {
+    .con {
+        width: 90%;
+    }
+}
+
+@include for-large {
+    .con {
+        width: 1200px;
+    }
+}
+
+@include for-extra-large {
+    .con {
+        width: 1400px;
+    }
+}
+
+// button styles 
+.btn {
+    width: max-content;
+    border-radius: $border-radius;
+    padding: .5em 1em;
+    font-size: 1em;
+    display: block;
+    position: relative;
+    color: $white;
+    z-index: 2;
+    cursor: pointer;
+    span {
+        position: relative;
+        z-index: 2;
+        font-size: 1em;
+    }
+    ;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 6px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 0 0 $border-radius $border-radius;
+        transition-duration: .3s;
+        z-index: 1;
+    }
+    &:hover {
+        &::after {
+            height: 100%;
+            border-radius: $border-radius;
+            transition-duration: .3s;
+        }
+    }
+    &.btn-primary {
+        background-color: $primary-color;
+        &::after {
+            background-color: $primary-dark;
+        }
+    }
+    &.btn-secondary {
+        background-color: $secondary-color;
+        &::after {
+            background-color: $secondary-dark;
+        }
+    }
+    &.btn-white {
+        background-color: $white;
+        span {
+            color: $text;
+        }
+        &::after {
+            background-color: $gray;
+        }
+    }
+}
