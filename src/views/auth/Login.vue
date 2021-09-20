@@ -50,7 +50,7 @@ export default {
     .form-field {
       width: 100%;
       height: 40px;
-      border: 1px solid rgba($primary-color, 0.5);
+      border: 1px solid rgba($border-color, 1);
       border-radius: $border-radius;
       margin-bottom: 0.5em;
       display: flex;
@@ -62,7 +62,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba($primary-color, 0.08);
+        background-color: rgba($primary-color, 0.1);
         color: $text;
       }
       input {
@@ -78,6 +78,27 @@ export default {
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 2em;
+      label {
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        cursor: pointer;
+        span {
+          width: 15px;
+          height: 15px;
+          border: 1px solid $primary-color;
+          display: block;
+          margin-right: 0.5em;
+          &:after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            opacity: 0;
+          }
+        }
+      }
       input[type="checkbox"] {
         display: none;
         &:checked {
@@ -95,31 +116,6 @@ export default {
                 );
               }
             }
-          }
-        }
-      }
-      label {
-        display: block;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        span {
-          display: block;
-          width: 15px;
-          height: 15px;
-          border: 1px solid $primary-color;
-          margin-right: 0.3em;
-          position: relative;
-          border-radius: 3px;
-          &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: 3px;
-            background-color: $primary-color;
-            opacity: 0;
-            transition-duration: 0.3s;
           }
         }
       }

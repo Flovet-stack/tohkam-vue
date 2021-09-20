@@ -2,7 +2,9 @@
   <div class="auth-layout">
     <header>
       <div class="con">
-        <img src="@/assets/images/logos/darklogo.png" alt="" class="logo" />
+        <router-link to="/"
+          ><img src="@/assets/images/logos/darklogo.png" alt="" class="logo"
+        /></router-link>
         <p>
           Already have an account?
           <router-link to="" class="btn btn-primary"
@@ -14,7 +16,7 @@
     <div class="sec-1">
       <div class="sub">
         <h1>Welcome</h1>
-        <p>Nive to meet you</p>
+        <p>Nice to meet you</p>
         <img src="@/assets/images/illustrations/rafiki.svg" alt="" />
       </div>
     </div>
@@ -31,6 +33,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/styles/_variables.scss";
+@import "../assets/styles/_utils.scss";
 .auth-layout {
   width: 100%;
   min-height: 100vh;
@@ -57,12 +61,35 @@ export default {
           margin-left: 0.3em;
           padding: 0.3em 1em;
           font-size: 0.8em;
+          @include for-tablet {
+            font-size: 1em;
+            padding: 0.5em 1em;
+          }
         }
       }
     }
   }
   .sec-1 {
     display: none;
+    @include for-large {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    background-color: $primary-color;
+    text-align: center;
+    color: $white;
+    background-image: url("../assets/images/bg/BG-Mask.png");
+    background-size: cover;
+    .sub {
+      width: 70%;
+      height: auto;
+      img {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2em;
+      }
+    }
   }
   .sec-2 {
     width: 100%;
@@ -70,6 +97,9 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 0 1em;
+    @include for-large {
+      width: 50%;
+    }
   }
 }
 </style>

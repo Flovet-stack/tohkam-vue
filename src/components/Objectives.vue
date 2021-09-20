@@ -80,6 +80,7 @@ export default {
         h3 {
           font-size: 1.5em;
           font-weight: 600;
+          margin: 0;
           margin-bottom: 0.5rem;
         }
       }

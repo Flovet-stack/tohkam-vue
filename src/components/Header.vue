@@ -140,6 +140,8 @@ header.desktop-header {
         opacity: 1;
       }
       ul {
+        padding: 0;
+        margin: 0;
         li {
           width: 100%;
           text-align: center;

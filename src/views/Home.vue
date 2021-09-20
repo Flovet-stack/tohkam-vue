@@ -56,7 +56,12 @@
               <img src="@/assets/images/IMG_20201218_155258.jpg" alt="" />
               <div class="top-sub">
                 <div class="like-con">
-                  <router-link to="" class="like liked">
+                  <router-link
+                    to=""
+                    class="like liked"
+                    uk-tooltip="Unlike"
+                    uk-animation-scale-up
+                  >
                     <img src="@/assets/images/icons/heart.svg" alt="" />
                     <span>34</span>
                   </router-link>
@@ -88,7 +93,7 @@
               />
               <div class="top-sub">
                 <div class="like-con">
-                  <router-link to="" class="like">
+                  <router-link to="" class="like" uk-tooltip="Like">
                     <img src="@/assets/images/icons/heart.svg" alt="" />
                     <span>34</span>
                   </router-link>
@@ -120,7 +125,7 @@
               />
               <div class="top-sub">
                 <div class="like-con">
-                  <router-link to="" class="like">
+                  <router-link to="" class="like" uk-tooltip="Like">
                     <img src="@/assets/images/icons/heart.svg" alt="" />
                     <span>34</span>
                   </router-link>
@@ -155,6 +160,8 @@
       </div>
     </section>
 
+    <Testimonial />
+
     <!-- home campaign section  -->
     <section class="home-campaigns">
       <div class="con">
@@ -167,7 +174,9 @@
               class="card-img"
             />
             <div class="category">Category</div>
-            <div class="name">Help children rise out of poverty</div>
+            <router-link to="" class="name"
+              >Help children rise out of poverty</router-link
+            >
             <p>
               Nostrud non mollit do velit ea aliqua aute officia exercitation
               non proident aliqua non pariatur.
@@ -193,12 +202,14 @@
           </div>
           <div class="campaign-card">
             <img
-              src="../assets/images/gettyimages-540547630-612x612.jpg"
+              src="../assets/images/gettyimages-55949603-612x612.jpg"
               alt=""
               class="card-img"
             />
             <div class="category">Category</div>
-            <div class="name">Help children rise out of poverty</div>
+            <router-link to="" class="name"
+              >Help children rise out of poverty</router-link
+            >
             <p>
               Nostrud non mollit do velit ea aliqua aute officia exercitation
               non proident aliqua non pariatur.
@@ -224,12 +235,14 @@
           </div>
           <div class="campaign-card">
             <img
-              src="../assets/images/gettyimages-540547630-612x612.jpg"
+              src="../assets/images/gettyimages-929598248-612x612.jpg"
               alt=""
               class="card-img"
             />
             <div class="category">Category</div>
-            <div class="name">Help children rise out of poverty</div>
+            <router-link to="" class="name"
+              >Help children rise out of poverty</router-link
+            >
             <p>
               Nostrud non mollit do velit ea aliqua aute officia exercitation
               non proident aliqua non pariatur.
@@ -254,10 +267,88 @@
             </div>
           </div>
         </div>
+        <div class="btn-con">
+          <a href="" class="btn btn-outline"
+            ><span
+              >View More
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></span
+          ></a>
+        </div>
       </div>
     </section>
 
-    home blogs section
+    <!-- home blogs section -->
+    <section class="home-blog">
+      <div class="con">
+        <h1 class="heading">Letest on our blog</h1>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <img
+              src="../assets/images/gettyimages-50338620-612x612.jpg"
+              alt=""
+              class="img"
+            />
+            <router-link to="" class="name"
+              >This is the title for this blog</router-link
+            >
+            <p>
+              In dolor anim sit voluptate qui do mollit sunt irure. Officia id
+              culpa esse commodo ullamco eu duis cupidatat aliqua aliqua cillum
+              veniam laborum. Officia ipsum enim consequat nostrud minim ea
+              aliqua et pariatur non deserunt amet. Sint non eiusmod eiusmod
+              nulla culpa exercitation consectetur. Et ut veniam veniam anim sit
+              deserunt ut sit ex eu occaecat. Ex ullamco aliqua excepteur cillum
+              ex ex proident exercitation dolor eu irure duis.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img
+              src="../assets/images/gettyimages-534931830-612x612.jpg"
+              alt=""
+              class="img"
+            />
+            <router-link to="" class="name"
+              >this is the title for this blog</router-link
+            >
+            <p>
+              In dolor anim sit voluptate qui do mollit sunt irure. Officia id
+              culpa esse commodo ullamco eu duis cupidatat aliqua aliqua cillum
+              veniam laborum. Officia ipsum enim consequat nostrud minim ea
+              aliqua et pariatur non deserunt amet. Sint non eiusmod eiusmod
+              nulla culpa exercitation consectetur. Et ut veniam veniam anim sit
+              deserunt ut sit ex eu occaecat. Ex ullamco aliqua excepteur cillum
+              ex ex proident exercitation dolor eu irure duis.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img
+              src="../assets/images/gettyimages-540547630-612x612.jpg"
+              alt=""
+              class="img"
+            />
+            <router-link to="" class="name"
+              >this is the title for this blog</router-link
+            >
+            <p>
+              In dolor anim sit voluptate qui do mollit sunt irure. Officia id
+              culpa esse commodo ullamco eu duis cupidatat aliqua aliqua cillum
+              veniam laborum. Officia ipsum enim consequat nostrud minim ea
+              aliqua et pariatur non deserunt amet. Sint non eiusmod eiusmod
+              nulla culpa exercitation consectetur. Et ut veniam veniam anim sit
+              deserunt ut sit ex eu occaecat. Ex ullamco aliqua excepteur cillum
+              ex ex proident exercitation dolor eu irure duis.
+            </p>
+          </div>
+        </div>
+        <div class="btn-con">
+          <a href="" class="btn btn-outline"
+            ><span
+              >View More
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></span
+          ></a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -266,6 +357,7 @@
 import Partners from "@/components/Partners.vue";
 import Objectives from "@/components/Objectives.vue";
 import Donate from "@/components/Donate.vue";
+import Testimonial from "@/components/Testimonial.vue";
 
 export default {
   name: "Home",
@@ -273,6 +365,7 @@ export default {
     Partners,
     Objectives,
     Donate,
+    Testimonial,
   },
 };
 </script>
@@ -374,6 +467,7 @@ export default {
         h1 {
           font-size: 2em;
           margin-bottom: 0.5em;
+          color: $white;
         }
         p {
           font-size: 1em;
@@ -400,6 +494,7 @@ export default {
         h1 {
           font-size: 2em;
           margin-bottom: 0.5em;
+          color: $white;
         }
         p {
           font-size: 1em;
@@ -482,6 +577,35 @@ export default {
       @include for-large {
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+    .btn-con {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1em;
+    }
+  }
+}
+
+.home-blog {
+  .con {
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3em;
+      @include for-tablet {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+      }
+      @include for-large {
+        gap: 3em;
+      }
+    }
+    .btn-con {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1em;
     }
   }
 }

@@ -181,6 +181,7 @@ footer {
           font-family: "Roboto Slab", serif;
         }
         ul {
+          padding: 0;
           li {
             margin-bottom: 1rem;
             a {

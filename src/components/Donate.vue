@@ -107,6 +107,7 @@ export default {
         font-size: 1.6em;
         color: $secondary-color;
         margin-bottom: 0.5em;
+        font-weight: 500;
         @include for-large {
           font-size: 2.3em;
           width: 70%;
@@ -131,6 +132,7 @@ export default {
       h2 {
         font-size: 1.6em;
         margin-bottom: 1rem;
+        font-weight: 500;
       }
       .options {
         display: grid;
@@ -158,8 +160,11 @@ export default {
               position: absolute;
               right: 4px;
               bottom: 4px;
-              font-size: 0.7em;
+              font-size: 0.5em;
               color: $border-color;
+              @include for-tablet {
+                font-size: 0.7em;
+              }
             }
             img {
               position: absolute;
