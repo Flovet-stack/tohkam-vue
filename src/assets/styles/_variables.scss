@@ -1,10 +1,15 @@
+@import './utils'; 
 $primary-color: #119DA4;
 $primary-dark: #07787e;
-$secondary-color: #324B4D;
+$primary-light: rgba(#119DA4, .23);
+$secondary-color: #1A2C42;
 $secondary-dark: #0b1520;
 $light-gray: #F2F0EE;
 $gray: #EAE7E4;
 $text: #1B1B1B;
+$text-light: #686868;
 $white: #fff;
 $footer-bg: #000;
 $border-radius: 3px;
+$border-color: #A6C1D3;
+$orange: #FF8945;
