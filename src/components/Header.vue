@@ -17,7 +17,9 @@
             <li><a href="">Contact</a></li>
           </ul>
           <div class="nav-btns">
-            <router-link to="/login" class="btn btn-secondary"><span>Login</span></router-link>
+            <router-link to="/login" class="btn btn-secondary"
+              ><span>Login</span></router-link
+            >
             <a href="" class="btn btn-primary"><span>Register</span></a>
           </div>
         </nav>

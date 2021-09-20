@@ -236,13 +236,8 @@ footer {
     color: $white;
     span {
       display: flex;
-      .btn {
-        span {
-          margin: 0 !important;
-        }
-        &.btn:first-child {
-          margin-right: 0.5em;
-        }
+      .btn:first-child {
+        margin-right: 0.5em;
       }
     }
   }
