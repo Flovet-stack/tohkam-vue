@@ -257,7 +257,7 @@
       </div>
     </section>
 
-    home blogs section 
+    home blogs section
   </div>
 </template>
 
@@ -269,7 +269,11 @@ import Donate from "@/components/Donate.vue";
 
 export default {
   name: "Home",
-  components: { Partners, Objectives, Donate },
+  components: {
+    Partners,
+    Objectives,
+    Donate,
+  },
 };
 </script>
 
