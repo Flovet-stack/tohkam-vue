@@ -114,6 +114,7 @@ export default {
         }
       }
       p {
+        color: $text;
         @include for-large {
           font-size: 1.3em;
         }

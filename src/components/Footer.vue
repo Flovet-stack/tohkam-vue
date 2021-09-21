@@ -279,6 +279,10 @@ footer {
     width: 100%;
     justify-content: space-between;
   }
+  #footer-bottom > span .btn {
+    max-height: 50px;
+    background-color: red;
+  }
 }
 
 /* end of he footer styles  */

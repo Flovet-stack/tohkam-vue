@@ -10,6 +10,7 @@
   list-style-type: none;
   border: none;
   outline: none;
+  // color: $text;
 }
 
 html {
@@ -78,6 +79,7 @@ h5,
 a,
 h6 {
   font-family: "Montserrat", sans-serif !important;
+  color: $text;
 }
 p {
   font-size: 1em;
@@ -85,10 +87,10 @@ p {
   margin: 0;
 }
 a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+  }
 }
 section {
   padding: 3em 0;
@@ -150,6 +152,7 @@ section {
     z-index: 2;
     font-size: 1em;
     margin: 0;
+    color: $white;
   }
   &::after {
     content: "";
@@ -282,31 +285,6 @@ section {
         bottom: 0;
         display: flex;
         align-items: flex-end;
-        .user-card {
-          width: 100%;
-          height: auto;
-          display: flex;
-          align-items: center;
-          img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 0.5em;
-            object-fit: cover;
-          }
-          .info {
-            color: $white;
-            .user-name {
-              font-size: 1.1em;
-              font-weight: 600;
-              text-transform: capitalize;
-            }
-            .time {
-              color: #eee;
-              font-size: 0.9em;
-            }
-          }
-        }
       }
     }
   }
@@ -336,6 +314,36 @@ section {
   }
 }
 
+// user-card styles
+
+.user-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    object-fit: cover;
+  }
+  .info {
+    color: $white;
+    .user-name {
+      font-size: 1.1em;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 1;
+      color: #eee;
+    }
+    .time {
+      color: #eee;
+      font-size: 0.9em;
+    }
+  }
+}
+
 // campaign card styles
 .campaign-card {
   //this card is meant to be use in a grid system or in a container with a specified width
@@ -358,7 +366,7 @@ section {
     font-size: 0.9em;
     margin: 0 auto;
     position: relative;
-    transform: translateY(-65%);
+    transform: translateY(-50%);
   }
   .name {
     font-size: 1.4em;
@@ -367,8 +375,8 @@ section {
     color: $text;
     text-decoration: none;
     &:hover {
-        text-decoration: none;
-        color: $primary-color;
+      text-decoration: none;
+      color: $primary-color;
     }
   }
   p {
@@ -451,7 +459,7 @@ section {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   .name {
     font-size: 1.3em;

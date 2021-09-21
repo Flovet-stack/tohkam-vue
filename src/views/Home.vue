@@ -320,25 +320,6 @@
               ex ex proident exercitation dolor eu irure duis.
             </p>
           </div>
-          <div class="blog-card">
-            <img
-              src="../assets/images/gettyimages-540547630-612x612.jpg"
-              alt=""
-              class="img"
-            />
-            <router-link to="" class="name"
-              >this is the title for this blog</router-link
-            >
-            <p>
-              In dolor anim sit voluptate qui do mollit sunt irure. Officia id
-              culpa esse commodo ullamco eu duis cupidatat aliqua aliqua cillum
-              veniam laborum. Officia ipsum enim consequat nostrud minim ea
-              aliqua et pariatur non deserunt amet. Sint non eiusmod eiusmod
-              nulla culpa exercitation consectetur. Et ut veniam veniam anim sit
-              deserunt ut sit ex eu occaecat. Ex ullamco aliqua excepteur cillum
-              ex ex proident exercitation dolor eu irure duis.
-            </p>
-          </div>
         </div>
         <div class="btn-con">
           <a href="" class="btn btn-outline"
@@ -473,6 +454,7 @@ export default {
           font-size: 1em;
           margin-bottom: 1em;
           width: 100%;
+          color: $white;
           @include for-tablet {
             font-size: 1.2em;
             margin-bottom: 2em;
@@ -500,6 +482,7 @@ export default {
           font-size: 1em;
           margin-bottom: 1em;
           width: 100%;
+          color: $white;
           @include for-tablet {
             width: 75%;
             margin-bottom: 2em;
@@ -594,7 +577,7 @@ export default {
       grid-template-columns: 1fr;
       gap: 3em;
       @include for-tablet {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1em;
       }
       @include for-large {
