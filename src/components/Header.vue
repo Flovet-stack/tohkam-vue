@@ -8,8 +8,8 @@
         </div>
         <nav :class="{ show: navState }">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Reports</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/reports">Reports</a></li>
             <li>
               <a href="">About</a>
             </li>

@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Login from "@/views/auth/Login.vue";
 import AuthLayout from "@/layouts/AuthLayout.vue";
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
+import Login from "@/views/auth/Login.vue";
+import Reports from "@/views/Reports.vue";
 
 const routes = [
   {
@@ -16,6 +17,12 @@ const routes = [
     name: "Login",
     meta: { layout: AuthLayout },
     component: Login,
+  },
+  {
+    path: "/reports",
+    name: "reports",
+    meta: { layout: DefaultLayout },
+    component: Reports,
   },
 ];
 

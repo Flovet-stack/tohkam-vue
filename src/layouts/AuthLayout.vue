@@ -35,6 +35,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_variables.scss";
 @import "../assets/styles/_utils.scss";
+
 .auth-layout {
   width: 100%;
   min-height: 100vh;
