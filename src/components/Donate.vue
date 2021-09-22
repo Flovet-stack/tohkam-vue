@@ -15,42 +15,42 @@
               <input type="radio" name="amount" id="for-500" />
               <label for="for-500">
                 <span>500</span>
-                <img src="../assets/images/icons/check.svg" alt="" />
+                <img src="@/assets/images/icons/check.svg" alt="" />
               </label>
             </div>
             <div class="option">
               <input type="radio" name="amount" id="for-1000" />
               <label for="for-1000">
                 <span>1,000</span>
-                <img src="../assets/images/icons/check.svg" alt="" />
+                <img src="@/assets/images/icons/check.svg" alt="" />
               </label>
             </div>
             <div class="option">
               <input type="radio" name="amount" id="for-1500" />
               <label for="for-1500">
                 <span>1,500</span>
-                <img src="../assets/images/icons/check.svg" alt="" />
+                <img src="@/assets/images/icons/check.svg" alt="" />
               </label>
             </div>
             <div class="option">
               <input type="radio" name="amount" id="for-2000" />
               <label for="for-2000">
                 <span>2,000</span>
-                <img src="../assets/images/icons/check.svg" alt="" />
+                <img src="@/assets/images/icons/check.svg" alt="" />
               </label>
             </div>
             <div class="option">
               <input type="radio" name="amount" id="for-5000" />
               <label for="for-5000">
                 <span>5,000</span>
-                <img src="../assets/images/icons/check.svg" alt="" />
+                <img src="@/assets/images/icons/check.svg" alt="" />
               </label>
             </div>
             <div class="option">
               <input type="radio" name="amount" id="for-10000" />
               <label for="for-10000">
                 <span>10,000</span>
-                <img src="../assets/images/icons/check.svg" alt="" />
+                <img src="@/assets/images/icons/check.svg" alt="" />
               </label>
             </div>
           </div>
@@ -67,7 +67,7 @@
       </div>
     </div>
     <img
-      src="../assets/images/vector/vector-1.svg"
+      src="@/assets/images/vector/vector-1.svg"
       alt=""
       class="abstract-bg"
     />

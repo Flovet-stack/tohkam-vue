@@ -2,25 +2,29 @@
   <div>
     <header class="desktop-header">
       <div class="con">
-        <div class="logo">
+        <router-link :to="{ name: 'home' }" class="logo">
           <img src="@/assets/images/logos/darklogo.png" alt="" />
           <span>Tohkam</span>
-        </div>
+        </router-link>
         <nav :class="{ show: navState }">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/reports">Reports</a></li>
+            <li><router-link :to="{ name: 'home' }">Home</router-link></li>
             <li>
-              <a href="">About</a>
+              <router-link :to="{ name: 'reports' }">Reports</router-link>
             </li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Contact</a></li>
+            <li>
+              <router-link :to="{ name: 'home' }">About</router-link>
+            </li>
+            <li><router-link :to="{ name: 'home' }">Events</router-link></li>
+            <li><router-link :to="{ name: 'home' }">Contact</router-link></li>
           </ul>
           <div class="nav-btns">
-            <router-link to="/login" class="btn btn-secondary"
+            <router-link :to="{ name: 'login' }" class="btn btn-secondary"
               ><span>Login</span></router-link
             >
-            <a href="" class="btn btn-primary"><span>Register</span></a>
+            <router-link :to="{ name: 'home' }" class="btn btn-primary"
+              ><span>Register</span></router-link
+            >
           </div>
         </nav>
         <div
@@ -81,6 +85,7 @@ header.desktop-header {
     .logo {
       display: flex;
       align-items: center;
+      color: $text;
       img {
         height: 35px;
         margin-right: 0.3em;

@@ -68,7 +68,7 @@
         <div class="campaign-grid">
           <div class="campaign-card">
             <img
-              src="../assets/images/gettyimages-540547630-612x612.jpg"
+              src="@/assets/images/gettyimages-540547630-612x612.jpg"
               alt=""
               class="card-img"
             />
@@ -101,7 +101,7 @@
           </div>
           <div class="campaign-card">
             <img
-              src="../assets/images/gettyimages-55949603-612x612.jpg"
+              src="@/assets/images/gettyimages-55949603-612x612.jpg"
               alt=""
               class="card-img"
             />
@@ -134,7 +134,7 @@
           </div>
           <div class="campaign-card">
             <img
-              src="../assets/images/gettyimages-929598248-612x612.jpg"
+              src="@/assets/images/gettyimages-929598248-612x612.jpg"
               alt=""
               class="card-img"
             />
@@ -183,7 +183,7 @@
         <div class="blog-grid">
           <div class="blog-card">
             <img
-              src="../assets/images/gettyimages-50338620-612x612.jpg"
+              src="@/assets/images/gettyimages-50338620-612x612.jpg"
               alt=""
               class="img"
             />
@@ -202,7 +202,7 @@
           </div>
           <div class="blog-card">
             <img
-              src="../assets/images/gettyimages-534931830-612x612.jpg"
+              src="@/assets/images/gettyimages-534931830-612x612.jpg"
               alt=""
               class="img"
             />

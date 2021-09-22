@@ -106,7 +106,7 @@
           </div>
         </div>
       </div>
-      <img src="../assets/images/icons/quotes.svg" alt="" class="abstract-bg" />
+      <img src="@/assets/images/icons/quotes.svg" alt="" class="abstract-bg" />
     </div>
   </section>
 </template>
@@ -120,7 +120,7 @@ export default {
       // entire view has been rendered
       let testimonial = document.getElementById("testimonial-wrapper");
       setInterval(() => {
-        if (testimonial.scrollLeft == 2000) {
+        if (testimonial.scrollLeft >= 2000 ) {
           testimonial.scrollLeft = 0;
         } else {
           testimonial.scrollLeft += document.querySelector(".con").offsetWidth;
@@ -166,8 +166,8 @@ export default {
           max-width: 500px;
         }
         @include for-extra-large {
-          min-width: 650px;
-          max-width: 650px;
+          min-width: 433.33px;
+          max-width: 433.33px;
         }
         .message {
           width: 100%;

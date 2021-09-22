@@ -4,9 +4,13 @@
     <div class="con">
       <h1 class="heading">Latest Reports</h1>
       <div class="reports">
-        <div class="report-card">
+        <div
+          v-for="report in latestReports"
+          :key="report.id"
+          class="report-card"
+        >
           <div class="top">
-            <img src="@/assets/images/IMG_20201218_155258.jpg" alt="" />
+            <img :src="report.image" alt="" />
             <div class="top-sub">
               <div class="like-con">
                 <router-link
@@ -21,9 +25,11 @@
               </div>
               <div class="user-con">
                 <div class="user-card">
-                  <img src="@/assets/images/hero-img.png" alt="" />
+                  <img :src="report.user.profile_image" alt="" />
                   <div class="info">
-                    <div class="user-name">John Doe</div>
+                    <div class="user-name">
+                      {{ report.user.first_name }} {{ report.user.last_name }}
+                    </div>
                     <div class="time">3 days ago</div>
                   </div>
                 </div>
@@ -31,74 +37,11 @@
             </div>
           </div>
           <router-link to="" class="name">
-            <p>
-              This is the name for a report can be as long as possible a report
-              can be as long as possible a report can be as long as possible a
-              report can be as long as possibl
-            </p>
-          </router-link>
-        </div>
-        <div class="report-card">
-          <div class="top">
-            <img
-              src="../assets/images/gettyimages-534931830-612x612.jpg"
-              alt=""
-            />
-            <div class="top-sub">
-              <div class="like-con">
-                <router-link to="" class="like" uk-tooltip="Like">
-                  <img src="@/assets/images/icons/heart.svg" alt="" />
-                  <span>34</span>
-                </router-link>
-              </div>
-              <div class="user-con">
-                <div class="user-card">
-                  <img src="@/assets/images/hero-img.png" alt="" />
-                  <div class="info">
-                    <div class="user-name">John Doe</div>
-                    <div class="time">3 days ago</div>
-                  </div>
-                </div>
-              </div>
+            <div class="category">
+              {{ report.report_case }}
             </div>
-          </div>
-          <router-link to="" class="name">
             <p>
-              This is the name for a report can be as long as possible a report
-              can be as long as possible a report can be as long as possible a
-              report can be as long as possibl
-            </p>
-          </router-link>
-        </div>
-        <div class="report-card">
-          <div class="top">
-            <img
-              src="@/assets/images/gettyimages-50338620-612x612.jpg"
-              alt=""
-            />
-            <div class="top-sub">
-              <div class="like-con">
-                <router-link to="" class="like" uk-tooltip="Like">
-                  <img src="@/assets/images/icons/heart.svg" alt="" />
-                  <span>34</span>
-                </router-link>
-              </div>
-              <div class="user-con">
-                <div class="user-card">
-                  <img src="@/assets/images/hero-img.png" alt="" />
-                  <div class="info">
-                    <div class="user-name">John Doe</div>
-                    <div class="time">3 days ago</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <router-link to="" class="name">
-            <p>
-              This is the name for a report can be as long as possible a report
-              can be as long as possible a report can be as long as possible a
-              report can be as long as possibl
+              {{ report.title }}
             </p>
           </router-link>
         </div>
@@ -106,6 +49,28 @@
     </div>
   </div>
 </template>
+
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      latestReports: {},
+    };
+  },
+  setup() {},
+  mounted() {
+    axios
+      .get("/all-reports")
+      .then((response) => {
+        this.latestReports = response.data.data.slice(
+          Math.max(response.data.data.length - 4, 0)
+        );
+      })
+      .catch((error) => console.log(error));
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
@@ -117,12 +82,12 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1em;
     @include for-tablet {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1em;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
     }
     @include for-large {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3em;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1em;
     }
   }
   .btn-con {
