@@ -340,7 +340,7 @@ export default {
             .btn-con {
               width: 100%;
               display: flex;
-              justify-content: flex-end;
+              justify-content: flex-start;
             }
           }
         }
@@ -353,7 +353,7 @@ export default {
           > .comment {
             display: flex;
             width: 100%;
-            border-bottom: 1px solid $border-color;
+            // border-bottom: 1px solid $border-color;
             padding: 1em;
             margin-bottom: 1em;
             background-color: $white;
@@ -368,6 +368,9 @@ export default {
               width: auto;
               width: calc(100% - 50px);
               margin-left: 10px;
+              background-color: #fafafa;
+              border: 1px solid $border-color;
+              padding: 1em;
               .user-info {
                 color: $white;
                 .user-name {
@@ -384,7 +387,7 @@ export default {
               }
               p {
                 width: 100%;
-                font-size: 0.9em;
+                font-size: 1em;
               }
             }
           }
