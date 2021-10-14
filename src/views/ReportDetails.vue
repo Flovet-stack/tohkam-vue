@@ -380,7 +380,7 @@ export default {
             .btn-con {
               width: 100%;
               display: flex;
-              justify-content: flex-end;
+              justify-content: flex-start;
             }
           }
         }
@@ -406,6 +406,9 @@ export default {
               width: auto;
               width: calc(100% - 50px);
               margin-left: 10px;
+              background-color: #fafafa;
+              border: 1px solid $border-color;
+              padding: 1em;
               .user-info {
                 color: $white;
                 .user-name {
