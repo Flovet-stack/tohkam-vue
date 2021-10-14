@@ -212,6 +212,15 @@ section {
       background-color: $gray;
     }
   }
+  &.btn-transparent {
+    background-color: transparent;
+    span {
+      color: $text;
+    }
+    &::after {
+      background-color: $light-gray;
+    }
+  }
 }
 
 // report card styles
@@ -225,9 +234,10 @@ section {
     width: 100%;
     height: 200px;
     position: relative;
-    border-radius: 10px 10px 0 0;
+    border-radius: $border-radius $border-radius 0 0;
+    background-color: $report-bg;
     @include for-tablet {
-      height: 300px;
+      height: 230px;
     }
     > img {
       width: 100%;
@@ -336,7 +346,7 @@ section {
   .info {
     color: $white;
     .user-name {
-      font-size: 0.9em;
+      font-size: 1em;
       font-weight: 600;
       text-transform: capitalize;
       line-height: 1;
@@ -344,7 +354,7 @@ section {
     }
     .time {
       color: #eee;
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
   }
 }

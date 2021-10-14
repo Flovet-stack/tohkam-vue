@@ -3,107 +3,187 @@
     <div class="con">
       <h1 class="heading">Our users speak</h1>
       <div class="wrapper" id="testimonial-wrapper" dir="ltr">
-        <div class="testimonial">
-          <div class="message">
-            Duis irure eiusmod et magna ad. Anim duis esse cillum sit commodo
-            ullamco occaecat veniam deserunt sunt duis. Esse aute velit do
-            officia Lorem tempor ullamco do aliqua enim labore. Laboris nulla
-            laboris adipisicing ad aute ex pariatur.
-          </div>
-          <div class="user-con">
-            <div class="user-card">
-              <img src="@/assets/images/hero-img.png" alt="" />
-              <div class="info">
-                <div class="user-name">John Doe</div>
-                <div class="time">CEO, ABC Corporation</div>
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light"
+          tabindex="-1"
+          uk-slider="autoplay: true; finite: true;"
+        >
+          <ul
+            class="
+              uk-slider-items uk-child-width-1-2@S uk-child-width-1-3@m uk-grid
+            "
+          >
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="message">
-            Duis irure eiusmod et magna ad. Anim duis esse cillum sit commodo
-            ullamco occaecat veniam deserunt sunt duis. Esse aute velit do
-            officia Lorem tempor ullamco do aliqua enim labore. Laboris nulla
-            laboris adipisicing ad aute ex pariatur.
-          </div>
-          <div class="user-con">
-            <div class="user-card">
-              <img src="@/assets/images/hero-img.png" alt="" />
-              <div class="info">
-                <div class="user-name">John Doe</div>
-                <div class="time">CEO, ABC Corporation</div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="message">
-            Duis irure eiusmod et magna ad. Anim duis esse cillum sit commodo
-            ullamco occaecat veniam deserunt sunt duis. Esse aute velit do
-            officia Lorem tempor ullamco do aliqua enim labore. Laboris nulla
-            laboris adipisicing ad aute ex pariatur.
-          </div>
-          <div class="user-con">
-            <div class="user-card">
-              <img src="@/assets/images/hero-img.png" alt="" />
-              <div class="info">
-                <div class="user-name">John Doe</div>
-                <div class="time">CEO, ABC Corporation</div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="message">
-            Duis irure eiusmod et magna ad. Anim duis esse cillum sit commodo
-            ullamco occaecat veniam deserunt sunt duis. Esse aute velit do
-            officia Lorem tempor ullamco do aliqua enim labore. Laboris nulla
-            laboris adipisicing ad aute ex pariatur.
-          </div>
-          <div class="user-con">
-            <div class="user-card">
-              <img src="@/assets/images/hero-img.png" alt="" />
-              <div class="info">
-                <div class="user-name">John Doe</div>
-                <div class="time">CEO, ABC Corporation</div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="message">
-            Duis irure eiusmod et magna ad. Anim duis esse cillum sit commodo
-            ullamco occaecat veniam deserunt sunt duis. Esse aute velit do
-            officia Lorem tempor ullamco do aliqua enim labore. Laboris nulla
-            laboris adipisicing ad aute ex pariatur.
-          </div>
-          <div class="user-con">
-            <div class="user-card">
-              <img src="@/assets/images/hero-img.png" alt="" />
-              <div class="info">
-                <div class="user-name">John Doe</div>
-                <div class="time">CEO, ABC Corporation</div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="message">
-            Duis irure eiusmod et magna ad. Anim duis esse cillum sit commodo
-            ullamco occaecat veniam deserunt sunt duis. Esse aute velit do
-            officia Lorem tempor ullamco do aliqua enim labore. Laboris nulla
-            laboris adipisicing ad aute ex pariatur.
-          </div>
-          <div class="user-con">
-            <div class="user-card">
-              <img src="@/assets/images/hero-img.png" alt="" />
-              <div class="info">
-                <div class="user-name">John Doe</div>
-                <div class="time">CEO, ABC Corporation</div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <div class="testimonial">
+                  <div class="message">
+                    Duis irure eiusmod et magna ad. Anim duis esse cillum sit
+                    commodo ullamco occaecat veniam deserunt sunt duis. Esse
+                    aute velit do officia Lorem tempor ullamco do aliqua enim
+                    labore. Laboris nulla laboris adipisicing ad aute ex
+                    pariatur.
+                  </div>
+                  <div class="user-con">
+                    <div class="user-card">
+                      <img src="@/assets/images/hero-img.png" alt="" />
+                      <div class="info">
+                        <div class="user-name">John Doe</div>
+                        <div class="time">CEO, ABC Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="dotnav-con">
+            <ul class="uk-slider-nav uk-dotnav"></ul>
           </div>
+
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slider-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slider-item="next"
+          ></a>
         </div>
       </div>
       <img src="@/assets/images/icons/quotes.svg" alt="" class="abstract-bg" />
@@ -114,20 +194,6 @@
 <script>
 export default {
   setup() {},
-  mounted() {
-    this.$nextTick(function () {
-      // Code that will run only after the
-      // entire view has been rendered
-      let testimonial = document.getElementById("testimonial-wrapper");
-      setInterval(() => {
-        if (testimonial.scrollLeft >= 2000 ) {
-          testimonial.scrollLeft = 0;
-        } else {
-          testimonial.scrollLeft += document.querySelector(".con").offsetWidth;
-        }
-      }, 5000);
-    });
-  },
 };
 </script>
 
@@ -154,21 +220,21 @@ export default {
         overflow: hidden;
       }
       .testimonial {
-        min-width: 90vw;
-        max-width: 90vw;
-        padding: 0 1em;
-        @include for-tablet {
-          min-width: 45vw;
-          max-width: 45vw;
-        }
-        @include for-large {
-          min-width: 500px;
-          max-width: 500px;
-        }
-        @include for-extra-large {
-          min-width: 433.33px;
-          max-width: 433.33px;
-        }
+        // min-width: 90vw;
+        // max-width: 90vw;
+        // padding: 0 1em;
+        // @include for-tablet {
+        //   min-width: 45vw;
+        //   max-width: 45vw;
+        // }
+        // @include for-large {
+        //   min-width: 500px;
+        //   max-width: 500px;
+        // }
+        // @include for-extra-large {
+        //   min-width: 433.33px;
+        //   max-width: 433.33px;
+        // }
         .message {
           width: 100%;
           background-color: $white;
@@ -202,6 +268,13 @@ export default {
             width: fit-content;
           }
         }
+      }
+      .dotnav-con {
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
       }
     }
     .abstract-bg {

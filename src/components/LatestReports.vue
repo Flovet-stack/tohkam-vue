@@ -36,7 +36,10 @@
               </div>
             </div>
           </div>
-          <router-link to="" class="name">
+          <router-link
+            :to="{ name: 'report', params: { id: parseInt(report.id) } }"
+            class="name"
+          >
             <div class="category">
               {{ report.report_case }}
             </div>
@@ -80,7 +83,7 @@ export default {
   .reports {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
+    column-gap: 1em;
     @include for-tablet {
       grid-template-columns: repeat(2, 1fr);
       gap: 2em;
@@ -89,12 +92,6 @@ export default {
       grid-template-columns: repeat(4, 1fr);
       gap: 1em;
     }
-  }
-  .btn-con {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1em;
   }
 }
 </style>

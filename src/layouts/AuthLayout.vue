@@ -73,7 +73,7 @@ export default {
   .sec-1 {
     display: none;
     @include for-large {
-      display: flex;
+      // display: flex;
       align-items: center;
       justify-content: center;
     }
@@ -99,7 +99,7 @@ export default {
     align-items: center;
     padding: 0 1em;
     @include for-large {
-      width: 50%;
+      // width: 50%;
     }
   }
 }

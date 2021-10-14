@@ -38,7 +38,11 @@
         </div>
       </div>
     </header>
-    <div class="nav-overlay" :class="{ show: navState }"></div>
+    <div
+      class="nav-overlay"
+      :class="{ show: navState }"
+      @click="toggleNavState()"
+    ></div>
   </div>
 </template>
 <script>
@@ -56,6 +60,11 @@ export default {
       } else {
         this.navState = true;
       }
+    },
+  },
+  watch: {
+    $route() {
+      this.navState = false;
     },
   },
 };
